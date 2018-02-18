@@ -1,0 +1,23 @@
+{
+  "name": "unicon-study-nodejs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebStyle/Unicon-study-NodeJS.git"
+  },
+  "author": "Farrukh Mamatkhalilov",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/WebStyle/Unicon-study-NodeJS/issues"
+  },
+  "homepage": "https://github.com/WebStyle/Unicon-study-NodeJS#readme",
+  "dependencies": {
+    "jayson": "^2.0.5",
+    "knex": "^0.14.3"
+  }
+}

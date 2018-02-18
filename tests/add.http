@@ -1,0 +1,11 @@
+POST http://localhost:3000
+Content-Type: application/json
+
+{
+    "jsonrpc": "2.0",
+    "method": "add",
+    "params": {},
+    "id": 1
+}
+
+###
