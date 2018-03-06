@@ -18,6 +18,9 @@
   "homepage": "https://github.com/WebStyle/Unicon-study-NodeJS#readme",
   "dependencies": {
     "jayson": "^2.0.5",
-    "knex": "^0.14.3"
+    "knex": "^0.14.3",
+    "lodash": "^4.17.5",
+    "pg": "^7.4.1",
+    "require-dir": "^1.0.0"
   }
 }
