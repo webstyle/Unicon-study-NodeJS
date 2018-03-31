@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Farrux",
+    "date_of_birth": "1997-02-26",
+    "address": "Toshkent, street 77",
+    "country": "Uzbekistan",
+    "email": "farrux@mail.uz"
+  },
+  {
+    "name": "Rasul",
+    "date_of_birth": "1990-11-02",
+    "address": "Toshkent, street 77",
+    "country": "Uzbekistan",
+    "email": "rasul@mail.uz"
+  },
+  {
+    "name": "Addy Osmani",
+    "date_of_birth": "1985-12-02",
+    "address": "Pala Alto, street 1",
+    "country": "USA",
+    "email": "info@addyosmani.com"
+  },
+  {
+    "name": "Paul Irish",
+    "date_of_birth": "1987-07-07",
+    "address": "Pala Alto, street 15",
+    "country": "USA",
+    "email": "info@paulirish.com"
+  },
+  {
+    "name": "TJ Holowaychuk",
+    "date_of_birth": "1984-07-07",
+    "address": "Victoria BC 15",
+    "country": "Canada",
+    "email": "info@apex.sh"
+  },
+  {
+    "name": "Abdullo Hidoyatov",
+    "date_of_birth": "1994-07-14",
+    "address": "Toshkent, Ziyolilar 29",
+    "country": "Uzbekistan",
+    "email": "abdullo@id.uz"
+  },
+  {
+    "name": "Alisher Ergashev",
+    "date_of_birth": "1994-07-14",
+    "address": "Toshkent, Chilonzor C",
+    "country": "Uzbekistan",
+    "email": "alisher@gov.uz"
+  },
+  {
+    "name": "Alisher Erv",
+    "date_of_birth": "1994-07-14",
+    "address": "Toshkent, Chilonzor C",
+    "country": "Uzbekistan",
+    "email": "alisher@gov.uz"
+  },
+  {
+    "name": "john Papa",
+    "date_of_birth": "1978-09-10",
+    "address": "USA, ORLANDO FL",
+    "country": "USA",
+    "email": "johnpapa.net"
+  },
+  {
+    "name": "Brendan Eich",
+    "date_of_birth": "1951-06-04",
+    "address": "London, street 12",
+    "country": "Great Britain",
+    "email": "info@mozilla.com"
+  }
+]

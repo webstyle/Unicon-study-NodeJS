@@ -1,10 +1,10 @@
 const knex = require("knex");
-const { development } = require("../knexfile");
+const config = require("../knexfile");
 
-class base {
+class BaseDao {
   constructor(knex) {
     this.knex = knex;
   }
 }
 
-module.exports = new base(knex(development));
+module.exports = new BaseDao(knex(config));
