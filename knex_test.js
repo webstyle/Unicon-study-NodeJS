@@ -1,39 +1,26 @@
-const ContactsDao = require('./dao/Contacts');
+const {createServer} = require('http');
+const PersonDao = require('./dao/Person');
 
-(async () => {
-
-  await ContactsDao.addContact({
-    name: "John",
-    last_name: "Doe",
-    tel: "1111111",
-    email: "johdoe@gmail.com"
-  });
-  console.log(await ContactsDao.getList());
-
-
-})();
-
-const person = {
-  id:"serial",
-  name: "string",
-  date_of_birth: "date",
-  address: "string",
-  country: "string",
-  email: "string"
-}
-
-person.create({
-  id:"serial",
-  name: "string",
-  date_of_birth: "date",
-  address: "string",
-  country: "string",
-  email: "string"
+const server = createServer(async(req, res) => {
+  if (req.method === 'POST') {
+    res.setHeader('Content-Type', 'application/json');
+    req.on('data', async (chunk) => {
+      const { name, date_of_birth, address, country, email } = JSON.parse(chunk);
+      res.end(JSON.stringify(await PersonDao.create({ name, date_of_birth, address, country, email })));
+    });
+  }
+  if (req.method === 'GET') {
+    const id = req.url.split('/').splice(-1)[0];
+    if (id === '') {
+      res.end(JSON.stringify(await PersonDao.getList()));
+    } else {
+      res.end(JSON.stringify(await PersonDao.getById(parseInt(id))));
+    }
+  }
+  if (req.method === 'PUT') {
+     // ...
+  }
 });
-person.getList(); // ==> []
-person.getById(id); // {id:"serial",name: "string", date_of_birth: "date", address: "string",country: "string",email: "string"}
-person.update(1, { person }) // ==> id
-person.delete(id);
-person.batch([person,person]); // ==> {}
-person.getByCountry('Country_name');
-person.getByMinAge(18);
+
+server.listen(3000);
+console.log(`Server is run on port 3000`);
